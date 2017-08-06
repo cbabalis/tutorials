@@ -27,5 +27,4 @@ while (totalSpendings < SPENDING_THRESHOLD ) {
 }
 
 totalSpendings += calculateTax( totalSpendings );
-finalPrice = formatPrice( totalSpendings );
-console.log("Total value is %s ", %finalPrice);
+console.log("Total value is " + formatPrice( totalSpendings ));
