@@ -6,7 +6,7 @@ const SPENDING_THRESHOLD = 500;
 var bankAccountBalance = 600;
 
 function calculateTax( amount ) {
-    return amount += amount * TAX_RATE;
+    return amount * TAX_RATE;
 }
 
 function formatPrice( numericPrice ) {
@@ -28,3 +28,11 @@ while (totalSpendings < SPENDING_THRESHOLD ) {
 
 totalSpendings += calculateTax( totalSpendings );
 console.log("Total value is " + formatPrice( totalSpendings ));
+
+if ( totalSpendings > bankAccountBalance ) {
+    console.log("You can't have all this stuff you know!");
+}
+else {
+    console.log("You can purchase all of them!");
+}
+
