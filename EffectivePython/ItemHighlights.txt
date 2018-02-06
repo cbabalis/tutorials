@@ -1,0 +1,12 @@
+Lists:
+
+Don't be verbose
+    - no 0 for the start index
+    - no length for the end index
+
+Slicing is forgiving of start or end indexes.
+
+Having two lists, assigning to a list slice will replace that range in the
+original sequence (even if lengths are different).
+
+
