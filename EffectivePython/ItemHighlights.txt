@@ -9,4 +9,13 @@ Slicing is forgiving of start or end indexes.
 Having two lists, assigning to a list slice will replace that range in the
 original sequence (even if lengths are different).
 
+#6
+Use positive stride values in slices WITHOUT start/end indexes.
+Avoid negative stride values.
 
+Avoid using start, end and stride together in a slingle slice.
+
+#7
+Prefer list comprehensions than "map" and "filter" built-in functions
+
+Dictionaries also support comprehension expressions.
