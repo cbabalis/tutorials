@@ -35,3 +35,12 @@ Prefer enumerate over range
 
 If needed, supply a second parameter to enumerate to specify the number from which to
 begin counting
+
+#11
+The "zip" built-in function can be used to iterate over multiple iterators IN
+PARALLEL.
+
+Python3: zip is a generator which produces tuples
+PYthon2: zip returns the full result as list of tuples
+
+zip truncates its output SILENTLY if iterators have different lengths
