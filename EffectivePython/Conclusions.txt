@@ -19,3 +19,19 @@ Avoid using start, end and stride together in a slingle slice.
 Prefer list comprehensions than "map" and "filter" built-in functions
 
 Dictionaries also support comprehension expressions.
+
+#9
+List comprehensions may cause probs for large inputs (memory)
+
+Generator expressions avoid memory issues
+
+Generator expressions can be composed by passing the iterator from one
+generator expression intothe for subexpression of another
+
+Generator expressions: very quick when chained together.
+
+#10
+Prefer enumerate over range
+
+If needed, supply a second parameter to enumerate to specify the number from which to
+begin counting
