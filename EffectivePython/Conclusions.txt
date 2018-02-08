@@ -44,3 +44,12 @@ Python3: zip is a generator which produces tuples
 PYthon2: zip returns the full result as list of tuples
 
 zip truncates its output SILENTLY if iterators have different lengths
+
+#12
+Python has special syntax with else blocks to immediately follow for and while
+loop interior blocks.
+
+Else block runs only if the loop body did not encounter a break statement.
+
+Avoid using else blocks after loops.
+
