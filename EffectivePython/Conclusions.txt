@@ -77,4 +77,41 @@ yield expressions within the generator function's body.
 because their working memory doesn't include all inputs and outputs.
 
 #17
+1. Be careful of functions that iterate over input arguments multiple times.
+2. You can easily define your own iterable container type by implementing the
+__iter__ method as a generator.
+3. You can detect that a value is an iterator instead of a container if
+    calling iter on it twice produces the same result, which can then be
+    progressed with the next built-in function.
 
+#18
+1. Functions can accept a variable number of positional arguments by using
+*args in the def statement.
+2. You can use the items from a sequence as the positional arguments for a
+function with the * operator.
+3. Using the * operator with a generator may cause your program to run out of
+memory and crash.
+
+#19
+1. Function arguments can be specified by position or by keyword.
+2. Keywords make it clear what the purpose of each argument is when it would be
+confusing with only positional arguments.
+3. Keyword argumetns with default values make it easy to add new behaviors to a
+function, especially when the function has existing callers.
+4. Optional keyword arguments should always be passed by keyword instead of by
+position.
+
+#20
+1. Default arguments are only evaluated once: during function definition at
+module load time. Unpredicted behavior for dynamic values ({}, []).
+2. Use None as the default value for keyword arguments that have a dynamic
+value. Document the actual default behavior in the function's docstring.
+
+#21
+1. Keyword arguments make the intention of a function call more clear.
+2. Use keyword-only arguments to force callres to supply keyword arguments for
+potentially confusing functions, especially those that accept multiple Boolean
+flags.
+3. Python 3 supports explicit syntax for keyword-only arguments in functions.
+4. Python 2 can emulate keyword-only arguments for functions by using **kwargs
+and manually raising TypeError exceptions.
