@@ -115,3 +115,11 @@ flags.
 3. Python 3 supports explicit syntax for keyword-only arguments in functions.
 4. Python 2 can emulate keyword-only arguments for functions by using **kwargs
 and manually raising TypeError exceptions.
+
+#22
+1. Avoid making dictionaries with values that are other dictionaries or long
+tuples.
+2. Use namedtuple for lightweight, immutable data containers BEFORE full class
+3. Use multiple helper classes when internal state dictionaries get
+complicated.
+
