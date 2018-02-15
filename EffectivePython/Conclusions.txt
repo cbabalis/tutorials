@@ -123,3 +123,12 @@ tuples.
 3. Use multiple helper classes when internal state dictionaries get
 complicated.
 
+#23
+1. Instead of defining and instantiating classes, functions are often all you
+need for simple interfaces between components in python.
+2. References to functions and methods in Python are first class, meaning they
+can be used in expressions like any other type.
+3. The __call__ special method enables instances of a class to be called like
+plain Python functions.
+4. When you need a function to maintian state, consider defining a class that
+provides the __call__ method instead of defining a stateful closure.
