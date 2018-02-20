@@ -132,3 +132,9 @@ can be used in expressions like any other type.
 plain Python functions.
 4. When you need a function to maintian state, consider defining a class that
 provides the __call__ method instead of defining a stateful closure.
+
+#24
+1. Python only supports a single constructor per class, the __init-_ method.
+2. Use @classmethod to define alternative constructors for your classes.
+3. Use class method polymorphism to provide generic ways to build and connect
+concrete subclasses.
