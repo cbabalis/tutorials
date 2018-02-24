@@ -149,3 +149,10 @@ superclass initialization order and diamond inheritance.
 2. Usggable behaviors at the instance level to provide per-class customization
 when mix-in classes require it.
 3. Compose mix-ins to create complex functionality from simple behaviors.
+
+#29
+1. Define new class interfaces using simple public attributes, and avoid set
+and get methods.
+2. Use @property to define special behavior when attributes are accessed on
+your objects, if necessary
+
