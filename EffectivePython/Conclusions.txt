@@ -186,3 +186,18 @@ are defined, before objects of their type are constructed.
 3. The __new__ method of metaclasses is run after the class statement's entire
 body has been processed.
 
+#34
+1. Class registragion is a helpful pattern for building modular Python
+programs.
+2. Metaclasses let you run registration code automatically each time your base
+class is subclassed in a program.
+3. Using metaclasses for class registration avoids errors by ensuring that you
+never miss a registration call.
+
+#35
+1. Metaclasses enable you to modify a class's attributes before the class is
+fully defined.
+2. Descriptors and metaclasses make a powerful combination for declarative
+behavior and runtime introspection.
+3. You can avoid both memory leaks and the weakref module by using metaclasses
+along with descriptors.
