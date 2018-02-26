@@ -169,3 +169,20 @@ descriptor classes.
 memory leaks.
 3. Don't get bogged down trying to understand exaclty how __getattribute__ uses
 the descriptor protocol for getting and setting attributes.
+
+#32
+1. Use __getattr__ and __setattr__ to lazily load and save attributes for an
+object.
+2. Understand that __getattr__ only gets called once when accessing a missing
+attribute, whereas __getattribute__ gets called every time an attribute is
+accessed.
+3. Avoid infinite recursion ing __getattribute__ and __setattr__ by using
+methods from super() to access instance attributes directly.
+
+#33
+1. Use metaclasses to ensure that subclasses are well formed at the time they
+are defined, before objects of their type are constructed.
+2. Metaclasses have slightly different syntax in Python 2 vs. Python 3.
+3. The __new__ method of metaclasses is run after the class statement's entire
+body has been processed.
+
