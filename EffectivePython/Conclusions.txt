@@ -201,3 +201,11 @@ fully defined.
 behavior and runtime introspection.
 3. You can avoid both memory leaks and the weakref module by using metaclasses
 along with descriptors.
+
+#36
+1. Use the subprocess module to run child processes and manage their input and
+output streams.
+2. Child processes run in parallel with the Python interpreter, enabling you to
+maximize your CPU usage.
+3. Use the timeout parameter with communicate to avoid deadlocks and hanging
+child processes.
