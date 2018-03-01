@@ -209,3 +209,25 @@ output streams.
 maximize your CPU usage.
 3. Use the timeout parameter with communicate to avoid deadlocks and hanging
 child processes.
+
+#43
+(import logging
+from contextlib import contextmanager
+)
+1. The with statement allows you to reuse logic from try/finally  blocks and
+reduce visual noise.
+2. The contextlib built-in module provides a contextmanager decorator that
+makes it easy to use your own functions in with statements.
+3. The value yielded by context managers is supplied to the as part of the with
+statement. It's useful for letting your code directly access the cause of the
+special context.
+
+#49
+1. Write docuumentation for every module, class, and function using docstrings.
+Keep them up to date as your code changes.
+2. For modules: Introduce the contents of the module and any important classes
+or functoins all users should know about.
+3. For classes: Document behavior, important attributes, and subclass behavior
+in the docstring following the class statement.
+4. For functions and methods: Document every argument, returned value, raised
+exception, and other behaviors in the docstring following the def statement.
