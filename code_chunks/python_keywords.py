@@ -25,7 +25,15 @@ class Keywords:
             sys.stdout.write(line)
 
     def replace_value(self, a_file, key, replace_value, delimiter='='):
-        """ Doc here
+        """ Method to replace a value in a given file.
+
+        :param string a_file: is a the file containing the key we want
+            to replace.
+        :param string key: is the key.
+        :param string replace_value: is the value which will replace
+            the default one.
+        :param string delimiter: [optional] the delimiter between key
+            and value.
         """
         text = ''
         with open(a_file, 'r') as f:
