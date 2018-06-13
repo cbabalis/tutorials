@@ -1,0 +1,9 @@
+2.2 Bridge Pattern
+
+- Situations where we want to separate an abstraction (e.g., an interface or an
+algorithm) from how it is implemented.
+
+- With the Bridge Pattern the approach is to create wto independent class
+hierarchies: the "abstract" one defining the operations and the concrete one
+providing the implementations that the abstract operations will ultimately
+call.
