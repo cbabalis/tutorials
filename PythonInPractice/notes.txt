@@ -7,3 +7,27 @@ algorithm) from how it is implemented.
 hierarchies: the "abstract" one defining the operations and the concrete one
 providing the implementations that the abstract operations will ultimately
 call.
+
+2.4 Decorator Pattern
+
+In general, a decorator is a function that takes a function as its sole
+argument and returns a new function with the same name as the original function
+but with enhanced functionality.
+
+* The Decorator Pattern is so useful that Python has built-in support for it.
+* It can be applied to both functions and methods.
+* Python supports class decorators: functions that take a class as their sole
+  argument and that return a new class with the same name as the original class
+  but with additional functionality.
+
+- A decorator may accept only a singl function, method, or class as its sole
+argument, so in theory it isn't possible to parameterize decorators.
+- Perfectly possible to stack decorators
+
+Structure:
+    1. create a wrapper function. Inside it call the original function.
+    2. Do any preprocessing before the call;
+    3. Do any postprocessing after the call;
+    4. Return whatever you like (original/modified result, whatever).
+    5. Return the wrapper function as the decorator's result
+
