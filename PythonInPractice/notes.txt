@@ -31,3 +31,15 @@ Structure:
     4. Return whatever you like (original/modified result, whatever).
     5. Return the wrapper function as the decorator's result
 
+2.5 Facade
+
+The Facade Pattern is used to present a simplified and uniform interface to a
+subsystem whose interface is too comple or too low-level for convenient use.
+
+Bound and Unbound methods:
+A *bound* method is a method that is already associated with an instance of its
+class.
+An *unbound* method is a method with no associated instance.
+- Strictly speaking, Python3 doesn't acutally have unbound methods, so unbound
+is really the underlying function object, although this only makes a difference
+in some metaprogramming corner cases.
